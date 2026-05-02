@@ -70,9 +70,9 @@ A production-grade self-hosted infrastructure running on a dedicated Ubuntu home
 
 ## Networking
 
-* **Zero-trust VPN mesh** via Tailscale — all inter-node communication stays private
+* **Zero-trust VPN mesh** via Tailscale ACLs, all inter-node communication stays private
 * **Reverse proxy** via Caddy with automatic Let's Encrypt TLS on all public services
-* **DNS** via dnsmasq for internal resolution
+* **DNS** via dnsmasq for internal resolution and claudflare Acme challange with wildcard
 * **Cloudflare Tunnel** for selected public services without port exposure
 
 ## Backup Strategy
